@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Sasha Zaloga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .contacts {
+      margin-bottom: 20px;
+    }
+
+    .contacts ul li {
+      margin-bottom: 5px;
+    }
+
+    .skills ul li,
+    .language ul li,
+    .code-examples ul li {
+      margin-bottom: 10px;
+    }
+
+    .code-examples pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Curriculum Vitae</h1>
+    <h2>Sasha Zaloga</h2>
+    <h3>Age: 19</h3>
+  </header>
+
+  <section class="contacts">
+    <h2>Contacts</h2>
+    <ul>
+      <li><a href="https://vk.com/zaloga1998">VK</a></li>
+      <li><a href="https://github.com/agarin6">GitHub</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Something About Myself:</h2>
+    <p>
+      I am reliable, hardworking, and an enthusiastic individual with a great passion for the software testing and developing industry.
+      At this moment, I live in Republic Of Belarus, the city of Mahilyow. I am a second-year student of the Belarusian-Russian University,
+      studying at the Engineering and Economics Faculty, majoring in Software Engineering.
+      I have excellent communication skills, enabling me to effectively communicate with a wide range of people with different temperaments of character.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>My Skills:</h2>
+    <ul>
+      <li>C#</li>
+      <li>T-SQL (Microsoft SQL Server, Microsoft Access)</li>
+      <li>Football skills</li>
+      <li>Painting skills</li>
+    </ul>
+  </section>
+
+  <section class="language">
+    <h2>Language Skills:</h2>
+    <ul>
+      <li>English Level: A2 (According to EPAM English Test), B1 (According to A1QA English Speaking and Grammar Test)</li>
+      <li>Russian Level: C2 (Native Speaker)</li>
+      <li>Belarussian Level: C2 (Native Speaker)</li>
+    </ul>
+  </section>
+
+  <section class="code-examples">
+    <h2>Solved CodeWars katas (Code examples)</h2>
+    <ul>
+      <li>
+        <pre><code>function repeatStr(n, s) {
+  return s.repeat(n);
+}</code></pre>
+      </li>
+      <li>
+        <pre><code>function keepOrder(ary, val) {
+  let index = 0;
+  while (index < ary.length && ary[index] < val) {
+    index++;
+  }
+  return index;
+}</code></pre>
+      </li>
+      <li>
+        <pre><code>function digPow(n, p) {
+  let digits = n.toString().split('');
+  let sum = 0;
+  for (let i = 0; i &lt; digits.length; i++) {
+    sum += Math.pow(parseInt(digits[i]), p + i);
+  }
+  let k = sum / n;
+  return Number.isInteger(k) ? k : -1;
+}</code></pre>
+      </li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
+
